@@ -17,35 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
       text: null
     },
     data: {
-      googleSpreadsheetKey: '1wwJMgsiwrGEtFlAPbAOXXLiyP-GBJmbonBQKBuINUHE',
-      googleSpreadsheetWorksheet: 2,
-      startRow: 72,
+      googleSpreadsheetKey: '1NQsPAjyU-UuxSG3K9w-t5hImk_ciIWyEg9TUwWZ__Eg',
       endColumn: 1
     },
     plotOptions: {
       series: {
-        groupPadding: .1,
-        dataLabels: {
-          enabled: true,
-          inside: true,
-          formatter: function formatter() {
-            if (this.x == 2011) {
-              return 0;
-            }
-          }
-        }
-      } // column: {
-      //     minPointLength: 3
-      // }
-
+        groupPadding: .01
+      }
     },
     legend: {
-      enabled: false // align: 'right',
-      // symbolRadius: 0,
-      // verticalAlign: 'top',
-      // x: 10,
-      // itemMarginTop: -10
-
+      enabled: false
     },
     xAxis: {
       labels: {
@@ -61,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
         overflow: 'allow'
       },
       max: 30,
-      min: -45,
-      tickAmount: 6
+      min: -10,
+      tickAmount: 5
     },
     credits: {
       enabled: false
@@ -77,21 +58,21 @@ document.addEventListener('DOMContentLoaded', function () {
       shapes: [{
         type: 'path',
         points: [{
-          x: 1999,
-          y: 7.23,
+          x: 1262217600000,
+          y: 10.72,
           xAxis: 0,
           yAxis: 0
         }, {
-          x: 2020,
-          y: 7.23,
+          x: 1609372800000,
+          y: 10.72,
           xAxis: 0,
           yAxis: 0
         }]
       }],
       labels: [{
         point: {
-          x: 2000,
-          y: 2,
+          x: 1325203200000,
+          y: 7.5,
           yAxis: 0,
           xAxis: 0
         },
@@ -100,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }],
       labelOptions: {
         formatter: function formatter() {
-          return "Historical <br/>average";
+          return "Average";
         }
       }
     }],
